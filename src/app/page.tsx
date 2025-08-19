@@ -1,7 +1,8 @@
 import { Icons } from "@/components/Icons/Icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Layers, Link, Pencil, Zap } from "lucide-react";
+import { Layers, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -19,8 +20,8 @@ export default function Landing() {
           </div>
 
           <div className="flex gap-3">
-            <Link href={"/blogs"} className="bg-gray-200">
-              Try it Out!
+            <Link href="/blog" className="bg-gray-200 text-black px-4 flex items-center hover:bg-gray-400 transition-all duration-200 delay-100 rounded-md">
+              Try It Out!
             </Link>
             <Button variant={"outline"}>Learn More</Button>
           </div>
